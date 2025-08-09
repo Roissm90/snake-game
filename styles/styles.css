@@ -13,10 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  padding: 12px 0;
-}
-
 .contenedor__principal {
   width: inherit;
   height: inherit;
@@ -24,7 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100dvh;
   margin: 0 auto;
   overflow-y: visible;
 }
@@ -32,7 +27,7 @@ body {
   width: 50vw;
   max-width: 250px;
   aspect-ratio: 348/78;
-  margin: 0 auto clamp(20px, 5vw, 40px);
+  margin: 24px auto clamp(20px, 5vw, 40px);
 }
 .contenedor__principal .title-image img {
   width: 100%;
@@ -196,6 +191,9 @@ body {
 }
 .contenedor__principal .contenedor__2do .control__buttons.leri {
   width: 100%;
+}
+.contenedor__principal .contenedor__2do .control__buttons.do {
+  padding-bottom: 12px;
 }
 .contenedor__principal .contenedor__2do .control__buttons #le {
   margin-right: auto;
