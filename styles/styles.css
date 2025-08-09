@@ -46,25 +46,42 @@ body {
   margin: 0 auto;
 }
 .contenedor__principal .contenedor__2do .score__board {
-  width: inherit;
+  padding-bottom: 10px;
+  width: 100%;
   height: 10%;
   border-radius: 7px 7px 0 0;
   font-size: 24px;
-  text-shadow: 1px 1px 2px white;
   background-color: #a3cda9;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
-.contenedor__principal .contenedor__2do .score__board.ptos {
+.contenedor__principal .contenedor__2do .score__board:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #2b2a32;
+  bottom: 10px;
+  left: 0;
+}
+.contenedor__principal .contenedor__2do .score__board .ptos {
   width: fit-content;
   height: fit-content;
   color: #2b2a32;
 }
-.contenedor__principal .contenedor__2do .score__board.hi {
+.contenedor__principal .contenedor__2do .score__board .ptos:after {
+  display: none;
+}
+.contenedor__principal .contenedor__2do .score__board .hi {
   width: fit-content;
   height: fit-content;
   color: #2b2a32;
+}
+.contenedor__principal .contenedor__2do .score__board .hi:after {
+  display: none;
 }
 .contenedor__principal .contenedor__2do .board {
   width: 100%;
